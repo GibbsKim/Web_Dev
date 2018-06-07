@@ -1,0 +1,12 @@
+<div class="new-app app container" ng-controller="NewVisApp">
+	<!--div ng-options="item.id as item.title for item in visualizationList"></div-->
+
+    <div class="firstCont" ng-options="item.title.test_area group by item.title for item in visualizationList"
+    			ng-model="firstVisualization"></div>
+    <div class="secondCont" ng-options="item.title.test_metrics group by item.title for item in visualizationList"
+    			ng-model="secondVisualization"></div>
+    <div class="thirdCont" ng-options="item.title.test_spat group by item.title for item in visualizationList"
+    			ng-model="thirdVisualization"></div>
+    <div class="fourthCont" ng-options="item.title.test_vega group by item.title for item in visualizationList"
+    			ng-model="fourthVisualization"></div>
+</div>

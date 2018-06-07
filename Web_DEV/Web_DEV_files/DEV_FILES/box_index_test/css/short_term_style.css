@@ -1,0 +1,56 @@
+.gui_root {
+	margin: auto;
+	width: auto;
+}
+
+.gui_top {
+	width: 100%;
+	min-height: : 190px; /* 400 */
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	margin: auto;
+}
+
+.gui_left {
+	width: 49.5%;
+	min-height: 50%;
+	max-height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.gui_right {
+	width: 50%;
+	mins-height: 50%;
+	max-height: 100%;
+	float: right;
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+}
+
+/* map style of left side in index */
+#map {
+	height: 500px; /* if set the value relatively cause no visualization some time */
+}
+
+table-layout : auto;
+table {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    height: 190px;
+}
+
+td, th {
+    border: 0.5px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    overflow-x: auto;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    overflow-x: auto;
+}

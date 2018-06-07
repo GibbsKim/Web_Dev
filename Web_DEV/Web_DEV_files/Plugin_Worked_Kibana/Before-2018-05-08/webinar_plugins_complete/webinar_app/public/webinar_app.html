@@ -1,0 +1,7 @@
+<div class="webinar-demo-app app-container" ng-controller="WebinarDemo">
+  <div>
+    <select ng-options="item.id as item.title for item in visualizationList" ng-model="selectedVisualization"></select>
+    rendering: {{renderVisualization}}
+  </div>
+  <div class="webinar-demo-visualize"></div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "analyze-api-ui-plugin",
+  "version": "6.2.2",
+  "description": "UI for elasticsearch analyze API",
+  "main": "index.js",
+  "kibana": {
+    "version": "6.2.2",
+    "templateVersion": "7.2.0"
+  },
+  "dependencies": {
+    "boom": "2.8.0",
+    "joi": "6.10.1",
+    "lodash": "3.10.1"
+  },
+  "build": {
+    "git": {
+      "count": "39",
+      "sha": "549adf6",
+      "date": "Fri, 9 Feb 2018 19:37:04 +0900"
+    },
+    "date": "Wed Feb 21 2018 15:13:37 GMT+0900 (JST)"
+  }
+}

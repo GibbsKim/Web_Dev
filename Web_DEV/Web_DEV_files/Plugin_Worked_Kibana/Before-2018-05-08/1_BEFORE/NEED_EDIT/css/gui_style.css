@@ -1,0 +1,35 @@
+.gui_root {
+	margin: auto;
+	width: 1000px;
+}
+
+.gui_top {
+	width: 100%;
+	height: 190px; /* 400 */
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+}
+
+.gui_left {
+	width: 49.5%;
+	height: 540px;
+	float: left;
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+}
+
+.gui_right {
+	width: 50%;
+	height: 540px;
+	float: left;
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+}
+
+/* map style of left side in index */
+#map {
+	height: 540px; /* if set the value relatively cause no visualization some time */
+}

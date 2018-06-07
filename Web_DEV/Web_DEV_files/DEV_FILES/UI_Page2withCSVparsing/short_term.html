@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/short_term_style.css" type="text/css" rel="stylesheet" />
+		<script src="js/ui.js"></script>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/papaparse.min.js"></script>
+    	<script src="https://code.highcharts.com/highcharts.js"></script> <!-- graph parsing -->
+    	<script src="https://code.highcharts.com/modules/data.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> <!-- can scrolling on html page -->
+	</head>	
+	<body>
+		<div class="gui_top" id="test_table" style="overflow-y: auto;"> <!-- Table position -->
+			<script src="js/table.js"></script>
+		</div>
+		<div class="gui_left" id="map"> <!-- Map position --> 
+			<script async defer
+    			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaPSTYF2YjBDSwWn6722p1wrwv05C0qiM&callback=initMap">
+    		</script>
+		</div>
+		<div class="gui_right" id="container"> <!-- Chart(Graph) position -->
+			<script src="js/graph.js"></script> <!-- highcharts inputting -->	
+		</div>
+	</body>
+</html>

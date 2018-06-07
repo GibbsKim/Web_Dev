@@ -1,0 +1,25 @@
+.idx_root {
+	margin: auto;
+	width: 1000px;
+}
+
+.idx_top {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+}
+
+.idx_left {
+	width: 50%;
+	height: 700px;
+	float: left;
+	text-align: center;
+}
+
+.idx_right {
+	width: 50%;
+	height: 700px;
+	float: right;
+	text-align: center;
+}
+

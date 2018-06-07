@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		iFrame url test 1 --> [Search_all]
+		<div><iframe src="http://localhost:9200/hmc_0x10_spatmaplistentry/_search?pretty=true&q=*:*" style="height: 100%"></iframe></div>
+		<b>iFrame url test 2 --> [Search_Time] -++ SKIP ++-</b>
+		<div><iframe src="http://localhost:9200/hmc_0x10_spatmaplistentry/_search?pretty=true&q=Time:*T13:08:07" style="height: 100%"></iframe></div>
+		iFrame url test 3 --> [Search_HV_VehicleID]
+		<div><iframe src="http://localhost:9200/hmc_0x10_spatmaplistentry/_search?pretty=true&q=HV_VehicleID:<=138" style="height: 100%"></iframe></div>
+		iFrame url test 4 --> [Search_HV_Speed <= 27]
+		<div><iframe src="http://localhost:9200/hmc_0x10_spatmaplistentry/_search?pretty=true&q=HV_Speed:<=27" style="height: 100%"></iframe></div>
+		iFrame url test 5 --> [Search_RSSI <= -96]
+		<div><iframe src="http://localhost:9200/hmc_0x10_spatmaplistentry/_search?pretty=true&q=RSSI:<=-96" style="height: 100%"></iframe></div>
+
+
+
+		<!--div><script src="go.js"></script></div-->
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/gui_style.css" type="text/css" rel="stylesheet" />
+		<script src="js/ui.js"></script>
+		<script src="js/table.js"></script>
+		<script src="js/graph.js"></script> <!-- highcharts inputting -->
+    	<script src="https://code.highcharts.com/highcharts.js"></script> <!-- graph parsing -->
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> <!-- can scrolling on html page -->
+    	<script type="text/javascript"> // googleapi's jquery used
+	   		$(document).ready(function(){
+    	    scrolify($('#tblNeedsScrolling'), 150); // 160 is height ->> 150
+    		});	
+    	</script>
+	</head>	
+	<body onload="Highcharts_graph()">
+		<div class="gui_top" id="table_div"> <!-- Table position -->
+			<table border="1" width="100%" id="tblNeedsScrolling">
+				<thead width="100%">
+					<tr><th width="20%">Date</th><th width="10%">Latitude</th><th width="10%">Longitude</th><th width="10%">HV_VehicleID</th><th width="5%">HV_Speed</th>
+					<th width="15%">HV_TransmissionState</th><th width="5%">RSSI</th></tr>
+				</thead>
+				<tbody width="100%">
+					<tr><td>2017-11-09-22:21:50.2</td><td>37.196677</td><td>126.823680</td><td>109</td><td>48.156</td><td>5</td><td>-92</td></tr>
+					<tr><td>2017-11-09-22:21:51.3</td><td>37.196762</td><td>126.823808</td><td>109</td><td>48.330</td><td>5</td><td>-90</td></tr>
+					<tr><td>2017-11-09-22:21:52.3</td><td>37.196836</td><td>126.823930</td><td>109</td><td>49.880</td><td>5</td><td>-89</td></tr>
+					<tr><td>2017-11-09-22:21:53.3</td><td>37.196910</td><td>126.824060</td><td>109</td><td>51.615</td><td>5</td><td>-89</td></tr>
+					<tr><td>2017-11-09-22:21:54.4</td><td>37.196993</td><td>126.824209</td><td>109</td><td>53.550</td><td>5</td><td>-90</td></tr>
+					<tr><td>2017-11-09-22:21:55.5</td><td>37.197078</td><td>126.824366</td><td>109</td><td>55.373</td><td>5</td><td>-86</td></tr>
+					<tr><td>2017-11-09-22:21:56.6</td><td>37.197165</td><td>126.824525</td><td>109</td><td>56.350</td><td>5</td><td>-85</td></tr>
+					<tr><td>2017-11-09-22:21:57.7</td><td>37.197255</td><td>126.824684</td><td>109</td><td>57.202</td><td>5</td><td>-82</td></tr>
+					<tr><td>2017-11-09-22:21:58.7</td><td>37.197340</td><td>126.824830</td><td>109</td><td>57.853</td><td>5</td><td>-83</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="gui_left" id="map"> <!-- Map position -->
+			<script async defer
+    			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaPSTYF2YjBDSwWn6722p1wrwv05C0qiM&callback=initMap">
+    		</script>
+		</div>
+		<div class="gui_right" id="container"> <!-- Chart(Graph) position -->
+			<!-- Graph position -->
+		</div>
+	</body>
+</html>
